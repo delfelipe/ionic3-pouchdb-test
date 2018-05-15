@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>The Employees Database</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addEmployee()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let emp of employees" (click)="showDetails(employee)">
+      <div> </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
